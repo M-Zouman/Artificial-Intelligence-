@@ -15,7 +15,7 @@ pygame.init()
 start_input  = Tk()
 start_input.title("Car Parking Lot")
 start_input.geometry('600x100+650+400')
-start_input.iconbitmap(default="D:\co\Summer\CS340\Project\images\parking_sign.ico")
+start_input.iconbitmap(default="D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_sign.ico")
 start_input.attributes("-topmost", True)
 
 # start 
@@ -36,21 +36,30 @@ AC.attributes("-topmost", True)
 AC.geometry('1074x630+450+300')
 canvas = Canvas(AC, width=1074, height=630)
 canvas.pack()
-tuple_canvas = ["D:\co\Summer\CS340\Project\images\parking_lot_layout_zoneA.png", "D:\co\Summer\CS340\Project\images\parking_lot_layout_zoneB.png",
-                    "D:\co\Summer\CS340\Project\images\parking_lot_layout_zoneC.png",  "D:\co\Summer\CS340\Project\images\parking_lot_layout_zoneD.png",
-                    "D:\co\Summer\CS340\Project\images\parking_lot_layout_zoneE.png",  "D:\co\Summer\CS340\Project\images\parking_lot_layout_zoneF.png"]
+
+tuple_canvas = ["D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_lot_layout_zoneA.png", "D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_lot_layout_zoneB.png",
+                "D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_lot_layout_zoneC.png",  "D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_lot_layout_zoneD.png",
+                "D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_lot_layout_zoneE.png",  "D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\parking_lot_layout_zoneF.png"]
 
 parking_lot_image = PhotoImage(file=tuple_canvas[number_of_zones - 1])  
 canvas.create_image(0, 0, anchor=NW, image=parking_lot_image)
 
-red_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\RedC.png').resize((45,100)))  # Red car image
-blue_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\BlueC.png').resize((45,100)))  # Blue car image
-green_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\GreenC.png').resize((45,100)))  # Green car image
-yellow_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\YellowC.png').resize((45,100)))  # Yellow car image
-indigo_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\IndigoC.png').resize((45,100)))  # Indigo car image
-orange_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\OrangeC.png').resize((45,100)))  # orange car image
-violet_car_image = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\VioletC.png').resize((45,100)))  # Violet car image
-Number_of_Cars = ImageTk.PhotoImage(Image.open('D:\co\Summer\CS340\Project\images\\Number_of_Cars.png'))  # Number of Cars
+red_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\RedC.png').resize((45, 100)))  # Red car image
+blue_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\BlueC.png').resize((45, 100)))  # Blue car image
+green_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\GreenC.png').resize((45, 100)))  # Green car image
+yellow_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\YellowC.png').resize((45, 100)))  # Yellow car image
+indigo_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\IndigoC.png').resize((45, 100)))  # Indigo car image
+orange_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\OrangeC.png').resize((45, 100)))  # orange car image
+violet_car_image = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\VioletC.png').resize((45, 100)))  # Violet car image
+Number_of_Cars = ImageTk.PhotoImage(Image.open(
+    'D:\Documents\GitHub\Car-Parking-Lot-Problem\Images\\Number_of_Cars.png'))  # Number of Cars
 
 car_tuple = (red_car_image, blue_car_image, green_car_image, yellow_car_image, indigo_car_image, orange_car_image, violet_car_image)
 
