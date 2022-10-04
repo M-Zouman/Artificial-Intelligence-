@@ -1,9 +1,8 @@
-# Artificial-Intelligence Car Parking Lot Problem
- By using the Algorthims:
- 1-ForwardChking 
- 2-Arc Consistency
- 3-BackTracking
- 
-All files uploded in behalf Mohammad Zouman @MoBinZouman and Nasser Alkhurayji @inazz97
-
-Google Colab URL --> https://colab.research.google.com/drive/1E713ZcuXcOMgotLgIzSc8seR4VKsu8qG?usp=sharing
+# Artificial Intelligence; Car Parking Lot Problem
+ Solved using the Algorthims:
+ <ul>
+   <li> Forward Checking </li>
+   <li> Arc Consistency </li>
+   <li> Backtracking </li>
+ </ul> <br>
+All files uploded in behalf of Mohammad Zouman @mohammadbinzouman, and Nasser Alkhurayji @inazz97
